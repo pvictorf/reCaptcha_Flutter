@@ -47,9 +47,11 @@ class _CaptchaState extends State<Captcha> {
       child: WebView(
         backgroundColor: Colors.transparent,
         initialUrl: site,
+        /*
         gestureRecognizers: Set()
           ..add(Factory<VerticalDragGestureRecognizer>(
               () => VerticalDragGestureRecognizer())),
+        */      
         javascriptMode: JavascriptMode.unrestricted,
         javascriptChannels: Set.from([
           JavascriptChannel(
